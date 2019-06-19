@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amanda.academicdashboard.CoursesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitleText"
+        android:paddingTop="55dp"
+        android:text="Term Detail"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTermName"
+        android:padding="12dp"
+        android:text= "Term Name:"
+        android:layout_below="@id/tvTitleText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTermNameDisplay"
+        android:padding="12dp"
+        android:layout_toRightOf="@id/tvTermName"
+        android:layout_below="@id/tvTitleText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStartDate"
+        android:padding="12dp"
+        android:text= "Start Date:   "
+        android:layout_below="@id/tvTermNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:id="@+id/tvStartDateDisplay"
+        android:layout_toRightOf="@id/tvStartDate"
+        android:layout_below="@id/tvTermNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEndDate"
+        android:padding="12dp"
+        android:text= "End Date:     "
+        android:layout_below="@id/tvStartDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEndDateDisplay"
+        android:padding="12dp"
+        android:layout_toRightOf="@id/tvEndDate"
+        android:layout_below="@id/tvStartDateDisplay"/>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEndDateDisplay"
+        android:layout_centerHorizontal="true"
+        android:text="Courses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on a course for details."
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id = "@+id/lvCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInfo"/>
+</RelativeLayout>

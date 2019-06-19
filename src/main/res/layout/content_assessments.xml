@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amanda.academicdashboard.AssessmentsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitleText"
+        android:paddingTop="55dp"
+        android:text="Course Detail"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCourseName"
+        android:padding="8dp"
+        android:text= "Course Name:"
+        android:layout_below="@id/tvTitleText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCourseNameDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvCourseName"
+        android:layout_below="@id/tvTitleText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStartDate"
+        android:padding="8dp"
+        android:text= "Start Date:      "
+        android:layout_below="@id/tvCourseNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/tvStartDateDisplay"
+        android:layout_toRightOf="@id/tvStartDate"
+        android:layout_below="@id/tvCourseNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEndDate"
+        android:padding="8dp"
+        android:text= "End Date:        "
+        android:layout_below="@id/tvStartDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEndDateDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvEndDate"
+        android:layout_below="@id/tvStartDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCourseStatus"
+        android:padding="8dp"
+        android:text= "Status:            "
+        android:layout_below="@id/tvEndDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStatusDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvCourseStatus"
+        android:layout_below="@id/tvEndDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorName"
+        android:padding="8dp"
+        android:text= "Mentor:           "
+        android:layout_below="@id/tvStatusDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorNameDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvMentorName"
+        android:layout_below="@id/tvStatusDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorPhone"
+        android:padding="8dp"
+        android:text= "Mentor Phone:   "
+        android:layout_below="@id/tvMentorNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorPhoneDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvMentorName"
+        android:layout_below="@id/tvMentorNameDisplay"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorEmail"
+        android:padding="8dp"
+        android:text= "Mentor Email:  "
+        android:layout_below="@id/tvMentorPhoneDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMentorEmailDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvEndDate"
+        android:layout_below="@id/tvMentorPhoneDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNotes"
+        android:padding="8dp"
+        android:text= "Notes:      "
+        android:layout_below="@id/tvMentorEmailDisplay"/>
+
+
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_below="@id/tvMentorEmailDisplay"
+        android:layout_toRightOf="@id/tvNotes"
+        android:text="Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Assessments"
+        android:layout_below="@id/btnNotes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on an assessment for details."
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id = "@+id/lvAssessments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInfo"/>
+</RelativeLayout>
+</ScrollView>

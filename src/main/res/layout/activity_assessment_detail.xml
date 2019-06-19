@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amanda.academicdashboard.AssessmentDetailActivity">
+
+    <TextView
+        android:id="@+id/tvTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Assessment Detail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAssessmentName"
+        android:padding="8dp"
+        android:text= "Assessment Name:"
+        android:layout_below="@id/tvTitleText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAssessmentNameDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvAssessmentName"
+        android:layout_below="@id/tvTitleText"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDueDate"
+        android:padding="8dp"
+        android:text= "Due Date:                  "
+        android:layout_below="@id/tvAssessmentNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDueDateDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvDueDate"
+        android:layout_below="@id/tvAssessmentNameDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAssessmentType"
+        android:padding="8dp"
+        android:text= "Assessment Type:   "
+        android:layout_below="@id/tvDueDateDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAssessmentTypeDisplay"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/tvAssessmentType"
+        android:layout_below="@id/tvDueDateDisplay"/>
+</RelativeLayout>

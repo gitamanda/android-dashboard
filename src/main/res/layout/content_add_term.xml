@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.amanda.academicdashboard.AddTermActivity"
+    tools:showIn="@layout/activity_add_term">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="55dp"
+        android:text="New Term"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:text=" Start Date:" />
+
+    <DatePicker
+        android:id="@+id/dpStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStart"
+        android:layout_toRightOf="@id/tvStart"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false">
+
+    </DatePicker>
+
+    <TextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpStart"
+        android:text=" End Date:  " />
+
+    <DatePicker
+        android:id="@+id/dpEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpStart"
+        android:layout_toRightOf="@id/tvEnd"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"></DatePicker>
+
+    <TextView
+        android:id="@+id/tvTermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpEnd"
+        android:text=" Title: "/>
+
+    <EditText
+        android:id="@+id/etTermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpEnd"
+        android:layout_toRightOf="@id/tvTermTitle"
+        android:hint="New Term Title"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+
+</RelativeLayout>
